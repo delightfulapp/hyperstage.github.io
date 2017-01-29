@@ -33,12 +33,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1>HyperStage</h1>
           <h2>Mocking Server for Mac / OSX</h2>
-          <ReactPlayer className="Video" url='https://www.youtube.com/watch?v=VXIv4ZH882U-U' playing={true} loop={true} />
+          <ReactPlayer controls={true} width="100%" height="30vh" className="Video" url='https://www.youtube.com/watch?v=VXIv4ZH882U-U' playing={true} loop={true} />
         </div>
         
         <h2>Features</h2>
         <div className="Features">
-          {features.map(feat => <div className="Feature" key={feat.title}><img src={feat.image} /> <h3>{feat.title}</h3>{feat.description}</div>)}
+          {features.map(feat => <div className="Feature" key={feat.title}><img src={feat.image} alt={feat.title} /> <h3>{feat.title}</h3>{feat.description}</div>)}
         </div>
       </div>
     );
